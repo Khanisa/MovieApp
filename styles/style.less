@@ -205,8 +205,8 @@ body {
         .img-detail:extend(.container) {
             position: absolute;
             top: 0;
-            width: @leading * 8;
-            height: @leading * 12;
+            max-width: 100%;
+            height: auto;
             padding-top: @leading;
             color: #fff;
             font-family: "Brown Regular";
@@ -233,10 +233,13 @@ body {
 
 .footer {
     position: relative;
+    width: 100%;
+    height: @leading * 1.5;
     background-color: #03172E;
     
     .text {
         position: relative;
+        top: @leading / 2;
         text-align: center;
         font-size: 0.6667em;
     }
@@ -260,20 +263,22 @@ body {
 //     }
 
 //     .movie-cards {
-//         padding-top: @leading * 2;
-//         padding-left: 1.25em;
-//         //padding-right: 0.5em;
+//         padding-bottom: @leading * 3;
 
 //         .movie-card {
-//             width: @leading * 5;
-//             height: @leading * 7.5;
-//             margin-left: @leading / 3;
-//             margin-right: @leading / 3;
-            
-//             .image {
-//                 width: @leading * 5;
-//                 height: @leading * 7.5;    
-//             }
+//             display: block;
+//             width: @leading * 7;
+//             height: @leading * 10.25;
+//             margin-left: @leading * 2;
+//             margin-right: @leading * 2;
+//         }
+//     }
+
+//     .footer {
+        
+//         .text {
+//             top: @leading / 2;
+//             font-size: 0.5em;
 //         }
 //     }
 // }
