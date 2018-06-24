@@ -16,17 +16,26 @@
             <li class="link genre-link">
                 <a href="#">Genre</a>
                 <ul class="dropdown">
-                    <li><a href="action.html">Action</a></li>
-                    <li><a href="biography.html">Biography</a></li>
+                    <li class="about_page"><a href="action.html">Action</a></li>
+                    <li class="bio_page"><a href="biography.html">Biography</a></li>
                 </ul>
             </li>
         </ul>
+        
+         <div class="drop-down-menu">
+            <input type="checkbox" class="trigger" id="menu-trigger"> 
+            <label for="menu-trigger" class="hamburger">
+                <div class="bars bar1"></div>
+                <div class="bars bar2"></div>
+                <div class="bars bar3"></div>
+            </label>
+        </div>
         <div class="search-bar">
             <input class="text-field" type="search" placeholder="Search by heroes">
         </div>
     </nav>
-    <div class="view movie-cards clearfix">
-         <li class="movie-card">
+    <ul class="view movie-cards clearfix">
+        <!-- <li class="movie-card">
             <img class="image" src="../images/Rampage.png" alt="poster">
             <div class="img-detail">
                 <p class="genre"></p>
@@ -87,8 +96,8 @@
         </li>
          <li class="movie-card">
             <img class="image" src="../images/The-Disaster-Artist.png" alt="poster">
-        </li>
-    </div>
+        </li> -->
+    </ul>
     <div class="view footer">
         <p class="text">All Rights Reserved &copy; 2018.</p>
     </div>
@@ -153,11 +162,7 @@
                 </div>
             </div>
     </div>
-    <script>
-        // var message = document.getElementsByClassName(".movie");
-        // message.addEventListener("mouseover", function mouseOver() {
-        //     message.
-        // });
+    <script src="index.js">
     </script>
 </body>
 </html>
