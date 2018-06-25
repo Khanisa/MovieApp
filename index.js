@@ -38,10 +38,10 @@ function creatMovieCard (data) {
     div.classList.add("img-detail"); //adding
     var year = document.createElement("p");
     year.classList.add("year");
-    year.innerHTML = "Year: " + data.release_date.substring(0,4);
+    year.innerHTML = "Year: " + data.release_date.substring(0, 4);
     var synopsis = document.createElement("p"); // creating p tag
     synopsis.classList.add("synopsis"); //adding class synopsis
-    synopsis.innerText = data.overview.substring(0,150) + "..."; ///adding inner text
+    synopsis.innerText = data.overview.substring(0, 150) + "..."; ///adding inner text
     div.appendChild(year);
     div.appendChild(synopsis);
     li.appendChild(div);
