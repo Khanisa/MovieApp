@@ -84,10 +84,13 @@
                 position: absolute;
                 z-index: 1000;
                 left: 0;
-                margin-top: @leading / 3;
-                width: @leading * 4;
+                margin-top: 0;
+                // width: @leading * 4;
                 background-color: #03172E;
                 opacity: 0;
+                height: @leading * 6;
+                overflow-y: auto;
+                cursor: pointer;
                 //outline: 1px solid #fff;
 
                 li:extend(.boxing) {
@@ -95,6 +98,7 @@
                     line-height: 21px;
                     display: block;
                     width: 100%;
+                    padding: @leading / 2 @leading * 4  @leading / 2 @leading / 2;
 
                     a {
                         position: relative;
@@ -108,6 +112,11 @@
                         color: #03172E;
                         background-color: #fff;
                     }
+                }
+
+                li:hover {
+                    color: #03172E;
+                    background-color: #fff;
                 }
             }
         }
